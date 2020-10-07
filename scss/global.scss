@@ -73,12 +73,13 @@ a {
         font-size: 200px;
         font-weight: 800;
         color: rgba(#fff, .02);
-        position: relative;
+        // position: relative;
         display: inline-block;
         transform: translateX(-50px);
     }
     span {
         display: inline-block;
+        position: relative;
     }
     h3 {
         position: absolute;
@@ -158,10 +159,10 @@ a {
     padding-bottom: 300px;
     // padding: 160px 0 120px;
 }
-.holder {
+// .holder {
     // padding-bottom: 300px;
     // margin-bottom: 35px;
-}
+// }
 .star-list {
     // display: inline-block;
     position: absolute;
