@@ -178,16 +178,16 @@ input[type=number] {
     -moz-appearance: textfield;
 }  
 .quantity input {
-    width: 48px;
+    width: 36px;
     height: 42px;
     display: block;
     background-color: transparent;
     color: #fff;
     font-weight: 800;
-    font-size: 40px;
-    line-height: 36px;
+    font-size: 30px;
+    line-height: 0px;
     border: none;
-}  
+} 
 .quantity input:focus {
     outline: 0;
 }  
