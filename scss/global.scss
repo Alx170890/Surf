@@ -195,16 +195,16 @@ input[type=number] {
     -moz-appearance: textfield;
 }  
 .quantity input {
-    width: 36px;
-    height: 24px;
+    width: 48px;
+    height: 100%;
     display: block;
     background-color: transparent;
     color: #fff;
     font-weight: 800;
-    font-size: 30px;
+    font-size: 40px;
     line-height: 0px;
     border: none;
-} 
+}
 .quantity input:focus {
     outline: 0;
 }  
