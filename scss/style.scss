@@ -11,7 +11,6 @@
         // position: relative;    
         &-item {
             height: 100vh;
-            // background-image: url(../img/header-bg-2.jpg);
             background-position: center top;
             background-repeat: no-repeat;
             background-size: cover;
@@ -37,6 +36,7 @@
         text-align: center;        
     }
     &__title {
+        // @extend %fs-extrabold;
         font-weight: 800;
         font-size: 200px;
         line-height: 156px;           
@@ -50,9 +50,11 @@
     &__date {
         font-size: 72px;
         line-height: 64px;
+        // @extend %fs-extrabold;
         font-weight: 800;
         span {
             padding-top: 15px;
+            // @extend %fs-light;
             font-weight: 300;
             font-size: 16px;
             line-height: 19px;
@@ -67,6 +69,7 @@
     }
     &__location {
         display: inline-block;
+        // @extend %fs-light;
         font-weight: 300;
         font-size: 12px;
         line-height: 14px;
@@ -112,6 +115,7 @@
             margin-bottom: 8px;
         }        
         &-title {
+            // @extend %fs-extrabold;
             font-weight: 800;
             font-size: 80px;
             line-height: 86px;
@@ -120,6 +124,7 @@
         &-text {
             font-size: 40px;
             line-height: 50px;
+            // @extend %fs-extrabold;
             font-weight: 800;
             margin-bottom: 20px;
         }
@@ -164,9 +169,11 @@
     &__number {
         font-size: 24px;
         line-height: 34px;
+        // @extend %fs-extrabold;
         font-weight: 800;
     }
     &__name {
+        // @extend %fs-light;
         font-weight: 300;
         line-height: 19px;
     }
@@ -179,6 +186,7 @@
             font-size: 12px;
             line-height: 14px;
             letter-spacing: 3px;
+            // @extend %fs-medium;
             font-weight: 500;
             padding-top: 6px;
             margin-bottom: 20px;
@@ -211,9 +219,17 @@
     }
 }
 // ------- Surf -------
+.no-webp .surf {
+    background-image: url(../img/surf-marker.png);
+}
+.webp .surf {
+    background-image: url(../img/surf-marker.webp);
+}
 .surf {   
-    background: url(../img/surf-marker.png) no-repeat right top 230px;
+    // background-image: url(../img/surf-marker.png);
     // background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: right top 230px;
     &__subtitle {
         text-align: right;
         padding-right: 80px;
@@ -268,6 +284,7 @@
         }
     }
     &__inner-title {
+        // @extend %fs-extrabold;
         font-weight: 800;
         font-size: 40px;
         line-height: 36px;
@@ -286,6 +303,7 @@
         height: 0;
         white-space: nowrap;
         span {
+            // @extend %fs-thin;
             font-weight: 100;
         }
     }
@@ -301,7 +319,7 @@
 .slider-map {
     max-width: 1200px;
     min-height: 635px;
-    background: url(../img/world-map-dots.png) no-repeat center top;
+    // background: url(../img/world-map-dots.png) no-repeat center top;
     background-size: contain;
     margin: 0 auto;
     .slick-list {
@@ -356,6 +374,7 @@
     &__content-title {
         font-size: 18px;
         line-height: 26px;
+        // @extend %fs-extrabold;
         font-weight: 800;
         padding-bottom: 8px;
         margin-bottom: 8px;
@@ -386,12 +405,14 @@
     &__content-number {
         font-size: 16px;
         line-height: 23px;
+        // @extend %fs-extrabold;
         font-weight: 800;
         padding: 4px 0;
     }
     &__content-name {
         font-size: 10px;
         line-height: 12px;
+        // @extend %fs-light;
         font-weight: 300;
     } 
     &--1 {
@@ -458,13 +479,25 @@
     }
 }
 // ------- Travel -------
-.holder {
+.no-webp .holder {
     background-image: url(../img/cocktail.png);
+}
+.webp .holder {
+    background-image: url(../img/cocktail.webp);
+}
+.no-webp .holder.sleep {
+    background-image: url(../img/flower-big.png);
+}
+.webp .holder.sleep {
+    background-image: url(../img/flower-big.webp);
+}
+.holder {
+    // background-image: url(../img/cocktail.png);
     background-repeat: no-repeat;
     background-position: right -250px bottom;
 
     &.sleep {
-        background-image: url(../img/flower-big.png); 
+        // background-image: url(../img/flower-big.png); 
         background-repeat: no-repeat;
         background-position: right -150px bottom 220px;       
     }    
@@ -545,6 +578,7 @@
         position: relative;
     }
     &__info-title {
+        // @extend %fs-extrabold;
         font-weight: 800;
         font-size: 40px;
         line-height: 36px;
@@ -558,6 +592,7 @@
             line-height: 0;
             letter-spacing: 5.25px;
             opacity: 0.75;
+            // @extend %fs-regular;
             font-weight: 400;
             text-align: right;
         }
@@ -578,9 +613,9 @@
     }
 }
 
-.shop {
-    background: url(../img/shop-bg.png) no-repeat right center;
-}
+// .shop {
+    // background: url(../img/shop-bg.png) no-repeat right center;
+// }
 .shop__slider {
     padding: 0 130px;
 }
@@ -603,6 +638,7 @@
     position: static;    
 }
 .shop__slider-price {
+    // @extend %fs-extrabold;
     font-weight: 800;
     font-size: 32px;
     line-height: 40px;
@@ -630,6 +666,7 @@
 .shop__extras-title {
     font-size: 28px;
     line-height: 40px;
+    // @extend %fs-extrabold;
     font-weight: 800;
     margin-bottom: 25px;
 }
@@ -654,6 +691,7 @@
 .shop__extras-price {    
     font-size: 18px;
     line-height: 40px;
+    // @extend %fs-extrabold;
     font-weight: 800;
 }
 .surfboard {
@@ -740,6 +778,7 @@
     width: 360px;    
     font-size: 24px;
     line-height: 24px;
+    // @extend %fs-extrabold;
     font-weight: 800;
     padding-left: 104px;
     top: -15px;
@@ -769,6 +808,7 @@
 .footer__copy {
     font-size: 12px;
     line-height: 14px;
+    // @extend %fs-light;
     font-weight: 300;    
     letter-spacing: 1.05px;
     opacity: .5;

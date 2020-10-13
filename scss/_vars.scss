@@ -1,1 +1,39 @@
+@import "fonts";
 $green: #4AF6CD;
+
+%fs-thin {
+  font-family: 'FiraSans-Thin', sans-serif;
+  font-weight: 100;
+}
+%fs-extralight {
+  font-family: 'FiraSans-ExtraLight', sans-serif;
+  font-weight: 200;
+}
+%fs-light {
+  font-family: 'FiraSans-Light', sans-serif;
+  font-weight: 300;
+}
+%fs-regular {
+  font-family: 'FiraSans-Regular', sans-serif;
+  font-weight: 400;
+}
+%fs-medium {
+  font-family: 'FiraSans-Medium', sans-serif;
+  font-weight: 500;
+}
+%fs-semibold {
+  font-family: 'FiraSans-SemiBold', sans-serif;
+  font-weight: 600;
+}
+%fs-bold {
+  font-family: 'FiraSans-Bold', sans-serif;
+  font-weight: 700;
+}
+%fs-extrabold {
+  font-family: 'FiraSans-ExtraBold', sans-serif;
+  font-weight: 800;
+}
+%fs-black {
+  font-family: 'FiraSans-Black', sans-serif;
+  font-weight: 900;
+}

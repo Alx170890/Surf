@@ -1,4 +1,5 @@
 @import "vars";
+@import "fonts";
 
 html {
     box-sizing: border-box;
@@ -8,6 +9,7 @@ html {
 }
 body {
     font-family: 'Fira Sans', sans-serif;
+    // @extend %fs-regular;
     font-weight: 400;
     font-size: 16px;
     background-color: #171919;
@@ -87,6 +89,7 @@ a {
     right: -5px;
     margin: 0;
     font-size: 80px;
+    // @extend %fs-extrabold;
     font-weight: 800;
     color: #fff;
     &::after {
@@ -103,6 +106,7 @@ a {
     display: inline-block;
     // position: relative;  
     font-size: 200px;
+    // @extend %fs-extrabold;
     font-weight: 800;
     color: rgba(#fff, .02);
     // position: relative;
@@ -115,10 +119,12 @@ a {
     display: inline-block;
     text-align: right;
     &__head {
+        // @extend %fs-extrabold;
         font-weight: 800;
         font-size: 40px;
         padding-right: 10px;
         span {
+            // @extend %fs-thin;
             font-weight: 100;
         }
     }
@@ -126,14 +132,17 @@ a {
 .descr {
     display: inline-block;
     &__head {
+        // @extend %fs-extrabold;
         font-weight: 800;
         font-size: 40px;        
         span {
+            // @extend %fs-thin;
             font-weight: 100;
         }
     }
 }
 .btn {
+    // @extend %fs-extrabold;
     font-weight: 800;
     font-size: 40px;
     line-height: 36px;
@@ -201,6 +210,7 @@ input[type=number] {
     display: block;
     background-color: transparent;
     color: #fff;
+    // @extend %fs-extrabold;
     font-weight: 800;
     font-size: 40px;
     line-height: 0;

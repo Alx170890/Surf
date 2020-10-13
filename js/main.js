@@ -163,4 +163,39 @@ $(function(){
     })
     
     new WOW().init();
+
+    const webp = () => { 
+      let imagesWebp = document.querySelectorAll('[data-img-webp]');
+      for (let i = 0; i < imagesWebp.length; i++) {
+        let imgWebp = imagesWebp[i].getAttribute('data-img-webp');
+        let count = imagesWebp[i];
+        console.log(count)
+        if (count.classList.contains('webp')) {
+          count.style.backgroundImage = 'url(' + imgWebp + ')';
+        }
+      }
+    };
+
+    Modernizr.on('webp', function(result) {
+      if (result) {
+          $(".surf").addClass("webp");    
+          $(".holder.sleep").addClass("webp"); 
+          $(".holder").addClass("webp");     
+          $(".slider-item").addClass("webp");    
+          $(".slider-map").addClass("webp");
+          $(".surf-box__wrapper").addClass("webp");
+          $(".holder-slider__head").addClass("webp");
+          $(".holder-slider__descr").addClass("webp");
+          $(".shop").addClass("webp");
+      } else {
+          $(".surf").addClass("no-webp");    
+          $(".holder").addClass("no-webp"); 
+          $(".holder.sleep").addClass("no-webp");   
+          // $(".slider-item").addClass("no-webp");
+          // $(".slider-map").addClass("no-webp");       
+      }
+      webp();
+    });
+
+    
 });
