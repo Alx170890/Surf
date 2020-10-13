@@ -170,7 +170,7 @@ $(function(){
         let imgWebp = imagesWebp[i].getAttribute('data-img-webp');
         let count = imagesWebp[i];
         console.log(count)
-        if (count.classList.contains('webp')) {
+        if (count.classList.contains('no-webp')) {
           count.style.backgroundImage = 'url(' + imgWebp + ')';
         }
       }
@@ -191,8 +191,12 @@ $(function(){
           $(".surf").addClass("no-webp");    
           $(".holder").addClass("no-webp"); 
           $(".holder.sleep").addClass("no-webp");   
-          // $(".slider-item").addClass("no-webp");
-          // $(".slider-map").addClass("no-webp");       
+          $(".slider-item").addClass("no-webp");    
+          $(".slider-map").addClass("no-webp");
+          $(".surf-box__wrapper").addClass("no-webp");
+          $(".holder-slider__head").addClass("no-webp");
+          $(".holder-slider__descr").addClass("no-webp");
+          $(".shop").addClass("no-webp");      
       }
       webp();
     });
